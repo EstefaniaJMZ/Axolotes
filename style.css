@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(201, 159, 174);
+   color: rgb(166, 92, 176);
+   font-family:'Times New Roman', Times, serif;
+}
+
+.titulo {color:rgb(166, 92, 176);
+    text-align: center;
+    font-family: 'Zilla Slab', serif;
+}
+/*text-align: center;-----este solo sirve para el texto, 
+para las imagenes es uno de aling items 
+font-family---> esta función es para poner el tipo de letra 
+Tambien te carga diferentes tipos de tipografia porque a veces no cargan alguna, pero si otra que es parecida*/ 
+
+/*img{width: 500px;}
+
+Esto es para imagenes, 
+aqui se estan selecionando todas las imagenes,
+si solo ponemos width-ancho o height-alto, va a cambiar proporcionalmente.
+Se recomienda que solo se ponga una para que sea proporcinal el cambio*/
+
+.menu{ 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/*
+1. le puedes meter margin-top y cambiar los porcentajes paara que esta parte del menu quede más cerca o lejos del titulo
+2. Se estar creando un contenedor para que todo se cambie y alinie*/
+
+p {color: rgb(0, 0, 0);}
+/*aqui va el comentario*/
+/*background se pone el color, solo se pueden colocar llaves, no corchetes*/
+/*siempre tiene que haber un punto y coma al final(;), sino no ierra*/
+
+.Ajolote1{ width: 500px;
+    align-items: center;
+}
+
+
+.Ajolote2{width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+}
+
+/* se prefiere usar porcentaje para que cambie a doc al formato que se esta usando
+*/
+/*justify-content: center, esta sirve para centrar la imagen, pero se necesitan más cosas, cómo lo de display y así*/
+/*margin-lef:25%,  esto es para centrar, pero no es recomendable, puedes utilizar porcentajes */
+/*border-radius:20px, ----> esto sirve para bordear una imagen que no es png*/
+
+.a { color: rgb(140, 88, 189);
+    text-decoration: none;
+}
+
+/*Es para los hipervinculos, la a representa las anclas
+cuando en text-decoration,le pones none se quitan las lineas de abajo */
+
