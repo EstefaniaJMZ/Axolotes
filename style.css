@@ -1,12 +1,44 @@
-body{
-    background-color: rgb(201, 159, 174);
-   color: rgb(166, 92, 176);
-   font-family:'Times New Roman', Times, serif;
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
 }
 
-.titulo {color:rgb(166, 92, 176);
+
+body{
+    background-color: rgb(255, 255, 255);
+   /*color: rgb(197, 119, 207);
+   */
+   color: #b25cc8;
+   font-family:'Times New Roman', Times, serif;
+   
+}
+
+span{
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 12ch;
+
+
+    animation: typing 2.5s steps(10), blink .5s infinite step-end alternate;
+    overflow:hidden;
+    }
+
+    @keyFrames typing {
+        from { width: 0}
+    }
+    
+    @keyFrames blink {
+     30% { border-color: transparent}
+    }
+
+
+.titulo {color:#b25cc8;
     text-align: center;
     font-family: 'Zilla Slab', serif;
+    font-size: 70px;
+    margin-bottom: 0%;
 }
 /*text-align: center;-----este solo sirve para el texto, 
 para las imagenes es uno de aling items 
@@ -20,30 +52,92 @@ aqui se estan selecionando todas las imagenes,
 si solo ponemos width-ancho o height-alto, va a cambiar proporcionalmente.
 Se recomienda que solo se ponga una para que sea proporcinal el cambio*/
 
+.paginahechapor{
+    text-align: center;
+    font-family: 'Zilla Slab', serif;
+    margin-top: 3px;
+    color: rgb(233, 231, 216);
+}
+.intro{
+    text-align: center;
+    font-family: 'Zilla Slab', serif;
+    margin-top: 3px;
+    color: rgb(233, 231, 216);
+    margin-bottom: 1px;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+header{
+    width: 100%;
+    height: 650px;
+    background: #bc4e9c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f8075742, #bc4e9d3d);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f8075742, #bc4e9d4e), url(https://la-lista.com/wp-content/uploads/2023/01/anfibium-museo-del-ajolote-11.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
 .menu{ 
     display: flex;
     align-items: center;
     flex-direction: column;
+  
 }
 /*
 1. le puedes meter margin-top y cambiar los porcentajes paara que esta parte del menu quede más cerca o lejos del titulo
 2. Se estar creando un contenedor para que todo se cambie y alinie*/
+a {
+    text-decoration: none;
+    color:#b25cc8;
+    font-size: 20px;
+}
+   /*color: #642a73;*/
 
-p {color: rgb(0, 0, 0);}
+a:hover{
+    text-decoration: underline;
+    color: #d1a8db;
+}
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.wave{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 200px;
+    background-size: contain;
+
+}
+
+
+
+p {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding: 0px 0px 30px 15px ;
+    font-weight: 200;
+    text-align: justify;
+    margin: 5px;
+    margin-right: 5%;
+    margin-left: 5%;
+    
+}
 /*aqui va el comentario*/
 /*background se pone el color, solo se pueden colocar llaves, no corchetes*/
 /*siempre tiene que haber un punto y coma al final(;), sino no ierra*/
 
-.Ajolote1{ width: 500px;
-    align-items: center;
-}
-
-
-.Ajolote2{width: 50%;
-    display: flex;
-    justify-content: center;
-    margin-left: 25%;
-}
 
 /* se prefiere usar porcentaje para que cambie a doc al formato que se esta usando
 */
@@ -51,10 +145,290 @@ p {color: rgb(0, 0, 0);}
 /*margin-lef:25%,  esto es para centrar, pero no es recomendable, puedes utilizar porcentajes */
 /*border-radius:20px, ----> esto sirve para bordear una imagen que no es png*/
 
-.a { color: rgb(140, 88, 189);
+.a { color: rgb(159, 117, 198);
     text-decoration: none;
 }
-
 /*Es para los hipervinculos, la a representa las anclas
 cuando en text-decoration,le pones none se quitan las lineas de abajo */
 
+
+/*SECCIÓN 1 DE TEXTO AJOLOTES*/
+.ajolotestext{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    text-align: center;
+}
+
+li{
+   font-size: 18px; 
+   margin-top: 0%;
+   padding: 1px;
+   margin-bottom: 2%;
+   background-size: contain;
+   contain: size;
+}
+
+ul{
+    background-size: contain;
+    margin-bottom: 0% auto;
+    
+    
+}
+
+
+
+.contenido_text_a_image{
+    margin-left: 50%;
+    margin-bottom: 2%;
+
+}
+
+.Ajolote1{ 
+    width: 400px;
+    background-size: contain;
+    border-radius: 10px;
+
+}
+.contenido_text_a_image2{
+    margin-left: 15%;
+    margin-bottom: 0%;
+
+}
+.Ajolote2{ 
+    width: 400px;
+    background-size: contain;
+    border-radius: 10px;
+    
+
+}
+.contenido_text_a_image3{
+    margin-left: 70%;
+    margin-bottom: 0%;
+    display: flex;
+    padding-left: 2%;
+
+}
+.Ajolote3{ 
+    width: 400px;
+    height: 380px;
+    background-size: contain;
+    border-radius: 10px;
+    margin-top: -93%;
+    
+
+}
+
+
+.contenido_text_a{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contenido_text_a2{
+    width: 80%;
+    margin-top: 3%;
+    margin-bottom: 0%;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 8%;
+    contain: size;
+    /* contain, ayudo a que la imagen se metiera dentro de la sección, porque encerro el espacio*/
+}
+
+
+/* Caracteristicas del titulo*/
+.contenido_text_a h2{ 
+    margin-bottom: 15px;
+    font-size: 42px;
+    text-align: left;
+    
+}
+
+.carac{
+   font-size: 23px;
+   margin-left:  0%;
+   margin-bottom: 1%;
+   
+}
+
+
+.f{
+    font-size: 20px;
+   padding: 0% auto;
+   margin-left: -2%;
+   margin-bottom: 0% auto;
+   contain: size;
+
+}
+.cqc{
+    font-size: 20px;
+   padding: 0% auto;
+   margin-left: -2%;
+   margin-bottom: 0% auto;
+   contain: size;
+}
+
+.eu{
+    font-size: 20px;
+   padding: 0% auto;
+   margin-left: -2%;
+   margin-bottom: 0% auto;
+   contain: size;
+}
+
+
+.ajolotestext .Wave2{
+    display: flex;
+    bottom: 0%;
+    width: 100%;
+    height: 200px;
+    background-size: contain;
+
+}
+
+
+/*SECCIÓN 2 DE TEXTO MITOLOGÍA*/
+
+.ajolotestext_inter_M{
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: 42px;
+}
+
+.ajolotestext2{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(195, 0, 255, 0.268);
+    background-size: contain;
+
+}
+
+.ajolotestext2 .Wave3{
+
+    bottom: 0%;
+    width: 100%;
+    height: 200px;
+    background-size: contain;
+
+}
+
+/*SECCIÓN 3 DE TEXTO ANATOMÍA*/
+.ajolotestext_inter_A{
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: 42px;
+}
+
+.ajolotestext3 .Wave4{
+    display: flex;
+    bottom: 0%;
+    width: 100%;
+    height: 200px;
+    background-size: contain;
+
+}
+
+
+
+/*SECCIÓN 3 DE TEXTO CONSERVACIÓN*/
+
+.ajolotestext_inter_C{
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: 42px;
+}
+
+.ajolotestext4{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    text-align: center;
+    background-color:  rgba(195, 0, 255, 0.268);
+    
+
+}
+
+.ajolotestext4 .Wave5{
+    height: 100px;
+    width: 100%;
+    bottom: 0%;
+    
+}
+
+.video{
+    align-items: center;
+    justify-content: center;
+    margin-left: 30%;
+    margin-top: 3%;
+}
+
+/*FOOTER*/
+
+footer{
+    margin-bottom: 5%;
+}
+
+.ayuda{
+    text-align: center;
+    font-size: 40px;
+}
+
+.ayuda_p{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 1%;
+}
+
+.formulario_registro{
+    width: 400px;
+    background-color: #d1a8db;
+    padding: 30px;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 4px;
+    box-shadow: 4px 10px 20px #000;
+}
+
+.formulario_registro h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #5d1e6d;
+}
+
+.formulario_registro p{
+    font-size: 18px;
+    text-align: center;
+    height: 40px;
+    line-height: 20px;
+}
+
+
+.formulario_registro a:hover {
+    text-decoration: underline;
+   color: #b25cc8;
+}
+
+.controls{
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: none;
+}
+
+.formulario_registro .button{
+    width: 100%;
+    border: none;
+    padding: 12px;
+    color: rgb(105, 0, 88);
+    margin: 16px 0;
+    font-size: 16px;
+    font-weight: bolder;
+}
