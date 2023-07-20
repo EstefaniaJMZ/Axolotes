@@ -177,9 +177,10 @@ ul{
 }
 
 
+/*IMAGENES*/
 
 .contenido_text_a_image{
-    margin-left: 50%;
+    margin-left: 43%;
     margin-bottom: 2%;
 
 }
@@ -196,7 +197,7 @@ ul{
 
 }
 .Ajolote2{ 
-    width: 400px;
+    width: 300px;
     background-size: contain;
     border-radius: 10px;
     
@@ -210,15 +211,14 @@ ul{
 
 }
 .Ajolote3{ 
-    width: 400px;
-    height: 380px;
+    width: 300px;
+    height: 280px;
     background-size: contain;
     border-radius: 10px;
-    margin-top: -93%;
-    
-
+    margin-top: -69%;
 }
 
+/*IMAGENES*/
 
 .contenido_text_a{
     display: flex;
